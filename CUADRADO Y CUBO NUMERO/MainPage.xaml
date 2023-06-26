@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CUADRADO_Y_CUBO_NUMERO.MainPage">
+
+    <StackLayout>
+        <Image Source="foto.png"
+               Margin="0,40,0,0"
+               HeightRequest="150">
+        </Image>
+        <Label Text="CUADRADO Y CUBO DE UN NUMERO"
+               Margin="0,40,0,0"
+               HorizontalOptions="CenterAndExpand"
+               FontSize="30"
+               Padding="10,0,0,0"
+               HorizontalTextAlignment="Center">
+        </Label>
+        <Label Text="INGRESE EL NUMERO"
+               Margin="0,40,0,0"
+               HorizontalOptions="Center"
+               FontSize="30">
+        </Label>
+        <Entry Placeholder="NUMERO A POTENCIAR"
+               Margin="40,40,40,0"
+               Keyboard="Numeric"
+               x:Name="num">
+            
+        </Entry>
+        <Label Text="CUADRADO: "
+               Margin="0,40,0,0"
+               HorizontalOptions="Center"
+               FontSize="40"
+               x:Name="cua">
+        </Label>
+        <Label Text="CUBO: "
+               Margin="0,40,0,0"
+               HorizontalOptions="Center"
+               FontSize="40"
+               x:Name="cubo">
+        </Label>
+        <Button Text="POTENCIAR"
+                Margin="30,49,30,0"
+                HeightRequest="90"
+                BackgroundColor="Green"
+                x:Name="potenciar"
+                Clicked="potenciar_Clicked"></Button>
+    </StackLayout>
+
+</ContentPage>
